@@ -1,3 +1,5 @@
+# LIVE : https://minstagram1.web.app/
+
 # Minstagram
 
 Minstagram is a full-stack photo-sharing application developed using React, TypeScript, Material UI, Firebase, and Firestore. This application allows users to register, upload, like, comment on, and report photos.
