@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+# Minstagram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Minstagram is a full-stack photo-sharing application developed using React, TypeScript, Material UI, Firebase, and Firestore. This application allows users to register, upload, like, comment on, and report photos.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User Registration and Authentication
+- Photo Upload
+- Like Photos
+- Comment on Photos
+- Report Photos
+- Real-time Data Updates with Firestore
+- Profile Management with Photo Uploads
+- Responsive and User-Friendly Design
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend:** React, TypeScript, Material UI
+- **Backend:** Firebase Firestore, Firebase Storage
+- **Authentication:** Firebase Authentication
+- **Deployment:** Firebase Hosting
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/sahinmeric/minstagram.git
+   cd minstagram
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Create a Firebase project:**
 
-### `npm run eject`
+   - Go to the [Firebase Console](https://console.firebase.google.com/)
+   - Click on "Add Project" and follow the steps to create a new Firebase project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. **Setup Firebase:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   - In your Firebase project, navigate to Project Settings and find your Firebase SDK configuration
+   - Create a `.env` file in the root of your project and add your Firebase configuration like this:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```env
+   REACT_APP_FIREBASE_API_KEY=your-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+   REACT_APP_FIREBASE_APP_ID=your-app-id
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+5. **Enable Firebase Services:**
 
-## Learn More
+   - Enable Firestore, Firebase Storage, and Firebase Authentication (Email/Password) in the Firebase Console
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. **Start the development server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
+
+7. **Deploy to Firebase Hosting:**
+   - Install Firebase CLI if you haven't already:
+     ```bash
+     npm install -g firebase-tools
+     ```
+   - Login to Firebase:
+     ```bash
+     firebase login
+     ```
+   - Initialize Firebase in your project:
+     ```bash
+     firebase init
+     ```
+   - Follow the prompts to set up Firebase Hosting and select your Firebase project
+   - Deploy your project:
+     ```bash
+     npm run build
+     firebase deploy
+     ```
+
+## Usage
+
+- **Register:** Create a new account by providing an email, password, and username.
+- **Login:** Login to your account using your registered email and password.
+- **Upload Photo:** Upload a new photo with a description.
+- **Like Photos:** Like your favorite photos.
+- **Comment on Photos:** Add comments to photos.
+- **Report Photos:** Report inappropriate photos.
+- **Profile Management:** Update your profile information and profile picture.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any inquiries or feedback, please contact:
+
+- **Your Name**
+- [Your Email](mailto:sahinmeric22@gmail.com)
+- [Your LinkedIn](https://www.linkedin.com/in/sahinmeric)
