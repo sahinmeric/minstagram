@@ -110,6 +110,6 @@ This project is licensed under the MIT License.
 
 For any inquiries or feedback, please contact:
 
-- **Your Name**
-- [Your Email](mailto:sahinmeric22@gmail.com)
-- [Your LinkedIn](https://www.linkedin.com/in/sahinmeric)
+- **Sahin Meric**
+- [sahinmeric22@gmail.com](mailto:sahinmeric22@gmail.com)
+- [https://www.linkedin.com/in/sahinmeric](https://www.linkedin.com/in/sahinmeric)
